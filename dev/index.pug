@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1")
+		title Тестовое задание
+		link(
+			rel="stylesheet"
+			href="bower/normalize-css/normalize.css")
+		link(
+			rel="stylesheet"
+			href="css/main.css")
+	body
+		header
+			.container
+				ul.menu__list
+					each value in ['home', 'technologies and other', 'magento', 'beacons', 'startup']
+						li.menu__item
+							a.menu__link(href="#")= value
+							ul.menu__list.menu__list_drop
+								each value in ['about us', 'career', 'vacancies', 'our mission']
+									li.menu__item.menu__item_drop
+										a.menu__link.menu__link_drop(href="#")= value
+		.content
+			.container
+				.content__block.content__block-1
+					.content__image
+					.content__text
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ratione ab perspiciatis repudiandae molestiae necessitatibus eligendi provident doloribus expedita fugiat illo rerum, voluptates, porro voluptate accusamus suscipit quod ipsam magni dignissimos harum minima. Modi vitae ipsam, expedita. Quae tempora maxime explicabo quaerat ut, error delectus nostrum, nemo suscipit dolorum ducimus!
+				.content__block.content__block-2
+					.content__text
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ratione ab perspiciatis repudiandae molestiae necessitatibus eligendi provident doloribus expedita fugiat illo rerum, voluptates, porro voluptate accusamus suscipit quod ipsam magni dignissimos harum minima. Modi vitae ipsam, expedita. Quae tempora maxime explicabo quaerat ut, error delectus nostrum, nemo suscipit dolorum ducimus!
+					.content__image
+				.content__buttons
+					a.btn.btn-default(href="#") Ok
+					input.btn.btn-error(
+						type="submit"
+						value="Submit")
+					button.btn.btn-success Cancel
+				form
+					input(
+						type="text"
+						placeholder="Введите имя")
+					input(
+						type="email"
+						placeholder="Введите email")
+					textarea(placeholder="Введите текст")
+					each value in ['1', '2', '3']
+						.input-wrapper
+							input(
+								id="check" + value
+								type="checkbox"
+								name="check"
+								value="option" + value)
+							i.check-icon
+							label.check-label(for="check" + value) Checkbox #{value}
+					each value in ['1', '2', '3']
+						.input-wrapper
+							input(
+								id="radio" + value
+								type="radio"
+								name="radio-btn"
+								checked)
+							i.radio-icon
+							label.radio-label(for="radio" + value) Radio #{value}
+					input(type="submit" value="submit").form__submit
+				.content__geometry
+					.arrow
+						.arrow__line
+						.arrow__triangle
+					.triangles
+						.triangles-one
+						.triangles-two
+					.circle
+		footer
+			.container
+				p.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium in eveniet nobis laboriosam excepturi, blanditiis quaerat nulla odio magni aperiam, magnam, atque veritatis, beatae nesciunt asperiores enim eligendi exercitationem.
+		script(src="bower/jquery/dist/jquery.min.js")
+		script(src="js/main.js")

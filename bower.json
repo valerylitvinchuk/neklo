@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "valerylitvinchuk <valery.litvinchuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/valerylitvinchuk/neklo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.2.0",
+    "jquery": "^3.1.1"
+  }
+}
